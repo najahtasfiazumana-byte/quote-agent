@@ -1,0 +1,5 @@
+line,sku,product,qty,billing_term,supplier,unit_cost,unit_price,net_amount,tax,line_total,cost_total,margin,margin_pct,lead_time_days,deadline_risk,other_options
+1,GWS-BS,Google Workspace Business Standard,12,annual,Lautan Tech Wholesale,590.00,670.45,8045.40,643.63,8689.03,7080.00,965.40,12.00%,1,False,Tropika Distribution 598.00 (eligible)
+2,LAP-MBA-M4,Apple MacBook Air 13 (M4 / 16GB / 256GB),2,one_time,Lautan Tech Wholesale,4290.00,4663.04,9326.08,932.61,10258.69,8580.00,746.08,8.00%,4,False,Tropika Distribution 4330.00 (eligible)
+
+TOTAL,,,,,,,,17371.48,1576.24,18947.72,15660.00,1711.48,9.85%

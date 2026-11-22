@@ -1,0 +1,14 @@
+sku,billing_term,unit_cost,stock,lead_time_days,min_qty,valid_until
+M365-BS,annual,549.00,,1,1,2026-10-31
+M365-BS,monthly,55.90,,1,1,2027-12-31
+M365-BP,annual,955.00,,1,1,2027-12-31
+GWS-BS,annual,590.00,,1,1,2027-12-31
+GWS-BS,monthly,59.50,,1,1,2027-12-31
+ADOBE-CCAA,annual,4095.00,,3,1,2027-12-31
+ZOOM-PRO,annual,642.00,,1,1,2027-12-31
+ZOOM-PRO,monthly,64.00,,1,1,2027-12-31
+CLAUDE-TEAM,annual,1155.00,,1,1,2027-12-31
+LAP-DELL-5450,one_time,4150.00,0,21,1,2027-12-31
+LAP-LEN-T14,one_time,4390.00,0,21,1,2027-12-31
+LAP-MBA-M4,one_time,4290.00,6,4,1,2027-12-31
+MON-DELL-P2425H,one_time,790.00,25,3,1,2027-12-31

@@ -1,0 +1,8 @@
+# Used by Streamlit Community Cloud. Locally, prefer: pip install -e ".[dev,ui]"
+pydantic>=2.5
+requests>=2.31
+reportlab>=4.0
+PyYAML>=6.0
+python-dotenv>=1.0
+streamlit>=1.50
+pandas>=2.0

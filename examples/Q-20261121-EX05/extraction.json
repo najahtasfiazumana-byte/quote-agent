@@ -1,0 +1,28 @@
+{
+  "client": {
+    "name": "Nurul Huda",
+    "email": "nurul@kedairoti.example",
+    "company": "Kedai Roti Nurul Enterprise"
+  },
+  "items": [
+    {
+      "requested_text": "Google Workspace Business Standard",
+      "family": "google_workspace",
+      "sku": "GWS-BS",
+      "quantity": 12,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "MacBook Air",
+      "family": "laptop",
+      "sku": "LAP-MBA-M4",
+      "quantity": 2,
+      "billing_term": "one_time",
+      "notes": null
+    }
+  ],
+  "deadline": null,
+  "deadline_text": null,
+  "language": "ms"
+}

@@ -1,0 +1,16 @@
+sku,name,family,category,billing_terms,unit,aliases
+M365-BB,Microsoft 365 Business Basic,microsoft_365,software,annual|monthly,user,m365 basic;business basic;o365 basic
+M365-BS,Microsoft 365 Business Standard,microsoft_365,software,annual|monthly,user,m365 standard;business standard;o365 standard
+M365-BP,Microsoft 365 Business Premium,microsoft_365,software,annual|monthly,user,m365 premium;business premium;o365 premium
+VISIO-P1,Visio Plan 1,visio,software,annual|monthly,user,visio plan 1;visio p1
+VISIO-P2,Visio Plan 2,visio,software,annual|monthly,user,visio plan 2;visio p2
+GWS-BS,Google Workspace Business Standard,google_workspace,software,annual|monthly,user,google workspace;gsuite;g suite;workspace business standard
+ADOBE-CCAA,Adobe Creative Cloud All Apps (Teams),adobe_cc,software,annual,user,creative cloud;adobe cc;adobe all apps
+ZOOM-PRO,Zoom Workplace Pro,zoom,software,annual|monthly,user,zoom pro;zoom workplace;zoom
+CLAUDE-TEAM,Claude Team (Standard seat),claude,ai_tools,annual|monthly,user,claude team;claude for work;claude
+LAP-DELL-5450,Dell Latitude 5450 (Intel Core Ultra 5 / 16GB / 512GB SSD),laptop,hardware,one_time,unit,dell latitude 5450;latitude 5450;dell 5450;dell latitude
+LAP-DELL-7450,Dell Latitude 7450 (Intel Core Ultra 7 / 32GB / 1TB SSD),laptop,hardware,one_time,unit,dell latitude 7450;latitude 7450;dell 7450
+LAP-LEN-T14,Lenovo ThinkPad T14 Gen 5 (Intel Core Ultra 5 / 16GB / 512GB SSD),laptop,hardware,one_time,unit,thinkpad t14;thinkpad;lenovo t14
+LAP-MBA-M4,Apple MacBook Air 13 (M4 / 16GB / 256GB),laptop,hardware,one_time,unit,macbook air;macbook
+MON-DELL-P2425H,Dell 24 Monitor P2425H,monitor,hardware,one_time,unit,p2425h;dell 24 monitor;monitor
+DOCK-DELL-WD19S,Dell Dock WD19S,dock,hardware,one_time,unit,wd19s;docking station;dock

@@ -1,0 +1,177 @@
+[
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts/search",
+    "body": {
+      "filterGroups": [
+        {
+          "filters": [
+            {
+              "propertyName": "email",
+              "operator": "EQ",
+              "value": "nurul@kedairoti.example"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        "email"
+      ],
+      "limit": 1
+    },
+    "response": {
+      "id": "DRYRUN-1001",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts",
+    "body": {
+      "properties": {
+        "email": "nurul@kedairoti.example",
+        "firstname": "Nurul",
+        "lastname": "Huda",
+        "company": "Kedai Roti Nurul Enterprise"
+      }
+    },
+    "response": {
+      "id": "DRYRUN-1002",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/deals",
+    "body": {
+      "properties": {
+        "dealname": "Kedai Roti Nurul Enterprise - Q-20261121-EX05",
+        "amount": "18947.72",
+        "pipeline": "default",
+        "dealstage": "presentationscheduled",
+        "closedate": "2026-12-05T00:00:00Z",
+        "description": "Quote Q-20261121-EX05, valid until 2026-12-05. Margin 9.8%. Approved by Najah (demo)."
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1002"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 3
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1003",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Google Workspace Business Standard",
+        "hs_sku": "GWS-BS",
+        "quantity": "12",
+        "price": "670.45",
+        "hs_discount_percentage": "0",
+        "description": "annual - per user / year"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1004",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Apple MacBook Air 13 (M4 / 16GB / 256GB)",
+        "hs_sku": "LAP-MBA-M4",
+        "quantity": "2",
+        "price": "4663.04",
+        "hs_discount_percentage": "0",
+        "description": "one_time - per unit"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1005",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/files/v3/files",
+    "body": {
+      "file": "Q-20261121-EX05.pdf",
+      "folderPath": "/quotes",
+      "options": "{\"access\": \"PRIVATE\"}"
+    },
+    "response": {
+      "id": "DRYRUN-1006",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/notes",
+    "body": {
+      "properties": {
+        "hs_timestamp": "1795233055531",
+        "hs_note_body": "Quotation Q-20261121-EX05 sent to client (PDF attached).",
+        "hs_attachment_ids": "DRYRUN-1006"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 214
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1007",
+      "results": []
+    }
+  }
+]

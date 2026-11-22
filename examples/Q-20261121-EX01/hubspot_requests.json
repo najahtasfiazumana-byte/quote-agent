@@ -1,0 +1,208 @@
+[
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts/search",
+    "body": {
+      "filterGroups": [
+        {
+          "filters": [
+            {
+              "propertyName": "email",
+              "operator": "EQ",
+              "value": "aisyah.rahman@kenanga-logistics.example"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        "email"
+      ],
+      "limit": 1
+    },
+    "response": {
+      "id": "DRYRUN-1001",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts",
+    "body": {
+      "properties": {
+        "email": "aisyah.rahman@kenanga-logistics.example",
+        "firstname": "Aisyah",
+        "lastname": "Rahman",
+        "company": "Kenanga Logistics Sdn Bhd"
+      }
+    },
+    "response": {
+      "id": "DRYRUN-1002",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/deals",
+    "body": {
+      "properties": {
+        "dealname": "Kenanga Logistics Sdn Bhd - Q-20261121-EX01",
+        "amount": "42510.83",
+        "pipeline": "default",
+        "dealstage": "presentationscheduled",
+        "closedate": "2026-12-05T00:00:00Z",
+        "description": "Quote Q-20261121-EX01, valid until 2026-12-05. Margin 9.1%. Approved by Najah (demo)."
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1002"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 3
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1003",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Microsoft 365 Business Standard",
+        "hs_sku": "M365-BS",
+        "quantity": "25",
+        "price": "627.27",
+        "hs_discount_percentage": "1.500",
+        "description": "annual - per user / year"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1004",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Visio Plan 1",
+        "hs_sku": "VISIO-P1",
+        "quantity": "3",
+        "price": "259.09",
+        "hs_discount_percentage": "0",
+        "description": "annual - per user / year"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1005",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Dell Latitude 5450 (Intel Core Ultra 5 / 16GB / 512GB SSD)",
+        "hs_sku": "LAP-DELL-5450",
+        "quantity": "5",
+        "price": "4543.48",
+        "hs_discount_percentage": "0",
+        "description": "one_time - per unit"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1006",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/files/v3/files",
+    "body": {
+      "file": "Q-20261121-EX01.pdf",
+      "folderPath": "/quotes",
+      "options": "{\"access\": \"PRIVATE\"}"
+    },
+    "response": {
+      "id": "DRYRUN-1007",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/notes",
+    "body": {
+      "properties": {
+        "hs_timestamp": "1795233055474",
+        "hs_note_body": "Quotation Q-20261121-EX01 sent to client (PDF attached).",
+        "hs_attachment_ids": "DRYRUN-1007"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 214
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1008",
+      "results": []
+    }
+  }
+]

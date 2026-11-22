@@ -1,0 +1,6 @@
+{"ts": "2026-11-21T11:50:55", "step": "received", "chars": 406, "provider": "mock"}
+{"ts": "2026-11-21T11:50:55", "step": "extracted", "items": 3, "changed_by_normalise": false}
+{"ts": "2026-11-21T11:50:55", "step": "priced", "lines": 3, "grand_total": "42510.83", "blocking": []}
+{"ts": "2026-11-21T11:50:55", "step": "approved", "approver": "Najah (demo)"}
+{"ts": "2026-11-21T11:50:55", "step": "documents_ready", "pdf": "Q-20261121-EX01.pdf", "writer_fallback": null}
+{"ts": "2026-11-21T11:50:55", "step": "crm", "mode": "dry-run", "contact_id": "DRYRUN-1002", "deal_id": "DRYRUN-1003", "line_item_ids": ["DRYRUN-1004", "DRYRUN-1005", "DRYRUN-1006"], "note_id": "DRYRUN-1008", "ok": true}

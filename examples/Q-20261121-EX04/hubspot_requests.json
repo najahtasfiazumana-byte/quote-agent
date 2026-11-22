@@ -1,0 +1,146 @@
+[
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts/search",
+    "body": {
+      "filterGroups": [
+        {
+          "filters": [
+            {
+              "propertyName": "email",
+              "operator": "EQ",
+              "value": "farid@binaarch.example"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        "email"
+      ],
+      "limit": 1
+    },
+    "response": {
+      "id": "DRYRUN-1001",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/contacts",
+    "body": {
+      "properties": {
+        "email": "farid@binaarch.example",
+        "firstname": "Farid",
+        "lastname": "Hassan",
+        "company": "Bina Arch Studio"
+      }
+    },
+    "response": {
+      "id": "DRYRUN-1002",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/deals",
+    "body": {
+      "properties": {
+        "dealname": "Bina Arch Studio - Q-20261121-EX04",
+        "amount": "6244.39",
+        "pipeline": "default",
+        "dealstage": "presentationscheduled",
+        "closedate": "2026-12-05T00:00:00Z",
+        "description": "Quote Q-20261121-EX04, valid until 2026-12-05. Margin 12.0%. Approved by Najah (demo)."
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1002"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 3
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1003",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/line_items",
+    "body": {
+      "properties": {
+        "name": "Zoom Workplace Pro",
+        "hs_sku": "ZOOM-PRO",
+        "quantity": "8",
+        "price": "722.73",
+        "hs_discount_percentage": "0",
+        "description": "annual - per user / year"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 20
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1004",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/files/v3/files",
+    "body": {
+      "file": "Q-20261121-EX04.pdf",
+      "folderPath": "/quotes",
+      "options": "{\"access\": \"PRIVATE\"}"
+    },
+    "response": {
+      "id": "DRYRUN-1005",
+      "results": []
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://api.hubapi.com/crm/v3/objects/notes",
+    "body": {
+      "properties": {
+        "hs_timestamp": "1795233055516",
+        "hs_note_body": "Quotation Q-20261121-EX04 sent to client (PDF attached).",
+        "hs_attachment_ids": "DRYRUN-1005"
+      },
+      "associations": [
+        {
+          "to": {
+            "id": "DRYRUN-1003"
+          },
+          "types": [
+            {
+              "associationCategory": "HUBSPOT_DEFINED",
+              "associationTypeId": 214
+            }
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "DRYRUN-1006",
+      "results": []
+    }
+  }
+]

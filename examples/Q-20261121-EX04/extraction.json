@@ -1,0 +1,28 @@
+{
+  "client": {
+    "name": "Farid Hassan",
+    "email": "farid@binaarch.example",
+    "company": "Bina Arch Studio"
+  },
+  "items": [
+    {
+      "requested_text": "Zoom Workplace Pro",
+      "family": "zoom",
+      "sku": "ZOOM-PRO",
+      "quantity": 8,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "Autodesk AutoCAD",
+      "family": null,
+      "sku": null,
+      "quantity": 8,
+      "billing_term": null,
+      "notes": null
+    }
+  ],
+  "deadline": "2026-12-01",
+  "deadline_text": "next month",
+  "language": "en"
+}

@@ -1,0 +1,167 @@
+{
+  "quote_no": "Q-20261121-EX03",
+  "created_on": "2026-11-21",
+  "valid_until": "2026-12-05",
+  "status": "PENDING_APPROVAL",
+  "provider": "mock",
+  "request_text": "From: Priya Nair <priya.nair@cyberjaya-analytics.example>\nSubject: 30 ThinkPads needed this week\n\nHello,\n\nWe are onboarding a new team on Monday and need 30 Lenovo ThinkPad T14 laptops\nand 30 docking stations delivered within 3 days. Please advise price and availability ASAP.\n\nRegards,\nPriya Nair\nIT Lead, Cyberjaya Analytics\n",
+  "extraction": {
+    "client": {
+      "name": "Priya Nair",
+      "email": "priya.nair@cyberjaya-analytics.example",
+      "company": "Cyberjaya Analytics"
+    },
+    "items": [
+      {
+        "requested_text": "ThinkPad T14",
+        "family": "laptop",
+        "sku": "LAP-LEN-T14",
+        "quantity": 30,
+        "billing_term": "one_time",
+        "notes": null
+      },
+      {
+        "requested_text": "docking stations",
+        "family": "dock",
+        "sku": "DOCK-DELL-WD19S",
+        "quantity": 30,
+        "billing_term": "one_time",
+        "notes": null
+      }
+    ],
+    "deadline": "2026-11-24",
+    "deadline_text": "within 3 days",
+    "language": "en"
+  },
+  "clarifications": [],
+  "quote": {
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "LAP-LEN-T14",
+        "name": "Lenovo ThinkPad T14 Gen 5 (Intel Core Ultra 5 / 16GB / 512GB SSD)",
+        "category": "hardware",
+        "billing_term": "one_time",
+        "unit_label": "per unit",
+        "quantity": 30,
+        "supplier": "Puncak IT Supply",
+        "unit_cost": "4410.00",
+        "lead_time_days": 7,
+        "unit_price": "4793.48",
+        "line_subtotal": "143804.40",
+        "discount_rate": "0.015",
+        "discount_amount": "2157.07",
+        "net_amount": "141647.33",
+        "tax_rate": "0.1",
+        "tax_amount": "14164.73",
+        "line_total": "155812.06",
+        "cost_total": "132300.00",
+        "margin_amount": "9347.33",
+        "margin_pct": "0.0660",
+        "deadline_risk": true,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "4390.00",
+            "lead_time_days": 21,
+            "stock": 0,
+            "valid_until": "2027-12-31",
+            "status": "excluded: only 0 in stock"
+          },
+          {
+            "supplier": "Puncak IT Supply",
+            "unit_cost": "4410.00",
+            "lead_time_days": 7,
+            "stock": 40,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "4460.00",
+            "lead_time_days": 2,
+            "stock": 8,
+            "valid_until": "2027-12-31",
+            "status": "excluded: only 8 in stock"
+          }
+        ]
+      },
+      {
+        "line_no": 2,
+        "sku": "DOCK-DELL-WD19S",
+        "name": "Dell Dock WD19S",
+        "category": "hardware",
+        "billing_term": "one_time",
+        "unit_label": "per unit",
+        "quantity": 30,
+        "supplier": "Puncak IT Supply",
+        "unit_cost": "880.00",
+        "lead_time_days": 5,
+        "unit_price": "956.52",
+        "line_subtotal": "28695.60",
+        "discount_rate": "0.015",
+        "discount_amount": "430.43",
+        "net_amount": "28265.17",
+        "tax_rate": "0.1",
+        "tax_amount": "2826.52",
+        "line_total": "31091.69",
+        "cost_total": "26400.00",
+        "margin_amount": "1865.17",
+        "margin_pct": "0.0660",
+        "deadline_risk": true,
+        "options_considered": [
+          {
+            "supplier": "Puncak IT Supply",
+            "unit_cost": "880.00",
+            "lead_time_days": 5,
+            "stock": 50,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "905.00",
+            "lead_time_days": 2,
+            "stock": 15,
+            "valid_until": "2027-12-31",
+            "status": "excluded: only 15 in stock"
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "subtotal": "172500.00",
+      "discount_total": "2587.50",
+      "net_total": "169912.50",
+      "tax_total": "16991.25",
+      "grand_total": "186903.75",
+      "cost_total": "158700.00",
+      "margin_total": "11212.50",
+      "margin_pct": "0.0660"
+    },
+    "unpriced": [],
+    "currency": "MYR"
+  },
+  "checks": [
+    {
+      "code": "DEADLINE_RISK",
+      "severity": "warn",
+      "message": "Lenovo ThinkPad T14 Gen 5 (Intel Core Ultra 5 / 16GB / 512GB SSD): fastest valid supplier needs 7 days, client deadline is 2026-11-24.",
+      "line_no": 1
+    },
+    {
+      "code": "DEADLINE_RISK",
+      "severity": "warn",
+      "message": "Dell Dock WD19S: fastest valid supplier needs 5 days, client deadline is 2026-11-24.",
+      "line_no": 2
+    },
+    {
+      "code": "MANAGER_APPROVAL",
+      "severity": "warn",
+      "message": "Total MYR 186,903.75 is above 50,000: needs a second approver.",
+      "line_no": null
+    }
+  ],
+  "approved_by": null,
+  "crm": null
+}

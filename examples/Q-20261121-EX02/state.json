@@ -1,0 +1,224 @@
+{
+  "quote_no": "Q-20261121-EX02",
+  "created_on": "2026-11-21",
+  "valid_until": "2026-12-05",
+  "status": "APPROVED",
+  "provider": "mock",
+  "request_text": "From: Daniel Wong <daniel@sunwaypixel.example>\nSubject: urgent - need M365 + laptops\n\nHi, we need Microsoft 365 for 25 staff, 3 of them need Visio, plus 5 laptops for new joiners by end of month. can send quote today?\n\nDaniel\nSunway Pixel Studio\n\n--- client reply ---\nFrom: Daniel Wong <daniel@sunwaypixel.example>\nSubject: RE: urgent - need M365 + laptops\n\nBusiness Standard for the 25, annual billing is fine. Visio Plan 1 for the 3, also annual.\nLaptops: Dell Latitude 5450 is ok.\n\nDaniel\n",
+  "extraction": {
+    "client": {
+      "name": "Daniel Wong",
+      "email": "daniel@sunwaypixel.example",
+      "company": "Sunway Pixel Studio"
+    },
+    "items": [
+      {
+        "requested_text": "Business Standard",
+        "family": "microsoft_365",
+        "sku": "M365-BS",
+        "quantity": 25,
+        "billing_term": "annual",
+        "notes": null
+      },
+      {
+        "requested_text": "Visio Plan 1",
+        "family": "visio",
+        "sku": "VISIO-P1",
+        "quantity": 3,
+        "billing_term": "annual",
+        "notes": null
+      },
+      {
+        "requested_text": "Dell Latitude 5450",
+        "family": "laptop",
+        "sku": "LAP-DELL-5450",
+        "quantity": 5,
+        "billing_term": "one_time",
+        "notes": null
+      }
+    ],
+    "deadline": "2026-11-30",
+    "deadline_text": "end of month",
+    "language": "en"
+  },
+  "clarifications": [],
+  "quote": {
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "M365-BS",
+        "name": "Microsoft 365 Business Standard",
+        "category": "software",
+        "billing_term": "annual",
+        "unit_label": "per user / year",
+        "quantity": 25,
+        "supplier": "Puncak IT Supply",
+        "unit_cost": "552.00",
+        "lead_time_days": 1,
+        "unit_price": "627.27",
+        "line_subtotal": "15681.75",
+        "discount_rate": "0.015",
+        "discount_amount": "235.23",
+        "net_amount": "15446.52",
+        "tax_rate": "0.08",
+        "tax_amount": "1235.72",
+        "line_total": "16682.24",
+        "cost_total": "13800.00",
+        "margin_amount": "1646.52",
+        "margin_pct": "0.1066",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "549.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2026-10-31",
+            "status": "excluded: price list expired 2026-10-31"
+          },
+          {
+            "supplier": "Puncak IT Supply",
+            "unit_cost": "552.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "556.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          }
+        ]
+      },
+      {
+        "line_no": 2,
+        "sku": "VISIO-P1",
+        "name": "Visio Plan 1",
+        "category": "software",
+        "billing_term": "annual",
+        "unit_label": "per user / year",
+        "quantity": 3,
+        "supplier": "Puncak IT Supply",
+        "unit_cost": "228.00",
+        "lead_time_days": 1,
+        "unit_price": "259.09",
+        "line_subtotal": "777.27",
+        "discount_rate": "0",
+        "discount_amount": "0.00",
+        "net_amount": "777.27",
+        "tax_rate": "0.08",
+        "tax_amount": "62.18",
+        "line_total": "839.45",
+        "cost_total": "684.00",
+        "margin_amount": "93.27",
+        "margin_pct": "0.1200",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Puncak IT Supply",
+            "unit_cost": "228.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "232.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          }
+        ]
+      },
+      {
+        "line_no": 3,
+        "sku": "LAP-DELL-5450",
+        "name": "Dell Latitude 5450 (Intel Core Ultra 5 / 16GB / 512GB SSD)",
+        "category": "hardware",
+        "billing_term": "one_time",
+        "unit_label": "per unit",
+        "quantity": 5,
+        "supplier": "Tropika Distribution",
+        "unit_cost": "4180.00",
+        "lead_time_days": 3,
+        "unit_price": "4543.48",
+        "line_subtotal": "22717.40",
+        "discount_rate": "0",
+        "discount_amount": "0.00",
+        "net_amount": "22717.40",
+        "tax_rate": "0.1",
+        "tax_amount": "2271.74",
+        "line_total": "24989.14",
+        "cost_total": "20900.00",
+        "margin_amount": "1817.40",
+        "margin_pct": "0.0800",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "4150.00",
+            "lead_time_days": 21,
+            "stock": 0,
+            "valid_until": "2027-12-31",
+            "status": "excluded: only 0 in stock"
+          },
+          {
+            "supplier": "Puncak IT Supply",
+            "unit_cost": "4235.00",
+            "lead_time_days": 7,
+            "stock": 30,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "4180.00",
+            "lead_time_days": 3,
+            "stock": 12,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "subtotal": "39176.42",
+      "discount_total": "235.23",
+      "net_total": "38941.19",
+      "tax_total": "3569.64",
+      "grand_total": "42510.83",
+      "cost_total": "35384.00",
+      "margin_total": "3557.19",
+      "margin_pct": "0.0913"
+    },
+    "unpriced": [],
+    "currency": "MYR"
+  },
+  "checks": [
+    {
+      "code": "EXPIRED_PRICE_SKIPPED",
+      "severity": "info",
+      "message": "Microsoft 365 Business Standard: ignored expired price list from Lautan Tech Wholesale.",
+      "line_no": 1
+    }
+  ],
+  "approved_by": "Najah (demo)",
+  "crm": {
+    "mode": "dry-run",
+    "contact_id": "DRYRUN-1002",
+    "deal_id": "DRYRUN-1003",
+    "line_item_ids": [
+      "DRYRUN-1004",
+      "DRYRUN-1005",
+      "DRYRUN-1006"
+    ],
+    "note_id": "DRYRUN-1008",
+    "ok": true
+  }
+}

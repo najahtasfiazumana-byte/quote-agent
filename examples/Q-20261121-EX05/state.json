@@ -1,0 +1,157 @@
+{
+  "quote_no": "Q-20261121-EX05",
+  "created_on": "2026-11-21",
+  "valid_until": "2026-12-05",
+  "status": "APPROVED",
+  "provider": "mock",
+  "request_text": "From: Nurul Huda <nurul@kedairoti.example>\nSubject: Sebut harga Google Workspace\n\nSalam,\n\nBoleh sediakan sebut harga untuk 12 lesen Google Workspace Business Standard, bayaran tahunan?\nKami juga perlukan 2 unit MacBook Air untuk team marketing.\n\nTerima kasih,\nNurul Huda\nKedai Roti Nurul Enterprise\n",
+  "extraction": {
+    "client": {
+      "name": "Nurul Huda",
+      "email": "nurul@kedairoti.example",
+      "company": "Kedai Roti Nurul Enterprise"
+    },
+    "items": [
+      {
+        "requested_text": "Google Workspace Business Standard",
+        "family": "google_workspace",
+        "sku": "GWS-BS",
+        "quantity": 12,
+        "billing_term": "annual",
+        "notes": null
+      },
+      {
+        "requested_text": "MacBook Air",
+        "family": "laptop",
+        "sku": "LAP-MBA-M4",
+        "quantity": 2,
+        "billing_term": "one_time",
+        "notes": null
+      }
+    ],
+    "deadline": null,
+    "deadline_text": null,
+    "language": "ms"
+  },
+  "clarifications": [],
+  "quote": {
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GWS-BS",
+        "name": "Google Workspace Business Standard",
+        "category": "software",
+        "billing_term": "annual",
+        "unit_label": "per user / year",
+        "quantity": 12,
+        "supplier": "Lautan Tech Wholesale",
+        "unit_cost": "590.00",
+        "lead_time_days": 1,
+        "unit_price": "670.45",
+        "line_subtotal": "8045.40",
+        "discount_rate": "0",
+        "discount_amount": "0.00",
+        "net_amount": "8045.40",
+        "tax_rate": "0.08",
+        "tax_amount": "643.63",
+        "line_total": "8689.03",
+        "cost_total": "7080.00",
+        "margin_amount": "965.40",
+        "margin_pct": "0.1200",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "590.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "598.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          }
+        ]
+      },
+      {
+        "line_no": 2,
+        "sku": "LAP-MBA-M4",
+        "name": "Apple MacBook Air 13 (M4 / 16GB / 256GB)",
+        "category": "hardware",
+        "billing_term": "one_time",
+        "unit_label": "per unit",
+        "quantity": 2,
+        "supplier": "Lautan Tech Wholesale",
+        "unit_cost": "4290.00",
+        "lead_time_days": 4,
+        "unit_price": "4663.04",
+        "line_subtotal": "9326.08",
+        "discount_rate": "0",
+        "discount_amount": "0.00",
+        "net_amount": "9326.08",
+        "tax_rate": "0.1",
+        "tax_amount": "932.61",
+        "line_total": "10258.69",
+        "cost_total": "8580.00",
+        "margin_amount": "746.08",
+        "margin_pct": "0.0800",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "4290.00",
+            "lead_time_days": 4,
+            "stock": 6,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "4330.00",
+            "lead_time_days": 2,
+            "stock": 10,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "subtotal": "17371.48",
+      "discount_total": "0.00",
+      "net_total": "17371.48",
+      "tax_total": "1576.24",
+      "grand_total": "18947.72",
+      "cost_total": "15660.00",
+      "margin_total": "1711.48",
+      "margin_pct": "0.0985"
+    },
+    "unpriced": [],
+    "currency": "MYR"
+  },
+  "checks": [
+    {
+      "code": "NO_DEADLINE",
+      "severity": "info",
+      "message": "Client gave no deadline; standard lead times apply.",
+      "line_no": null
+    }
+  ],
+  "approved_by": "Najah (demo)",
+  "crm": {
+    "mode": "dry-run",
+    "contact_id": "DRYRUN-1002",
+    "deal_id": "DRYRUN-1003",
+    "line_item_ids": [
+      "DRYRUN-1004",
+      "DRYRUN-1005"
+    ],
+    "note_id": "DRYRUN-1007",
+    "ok": true
+  }
+}

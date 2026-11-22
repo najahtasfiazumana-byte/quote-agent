@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# Quote Agent configuration
+# Every number that ends up on a client quote is controlled from here, so
+# business rules can change without touching code.
+# ---------------------------------------------------------------------------
+
+company:
+  # Fictional demo company. Replace with your own details.
+  name: "Demo Tech Sourcing Sdn Bhd"
+  registration_no: "202601000000 (1234567-X)"   # placeholder
+  tax_registration_no: "SST-PLACEHOLDER-0000"     # placeholder
+  address:
+    - "Level 5, Demo Tower"
+    - "Seksyen 13, 40100 Shah Alam, Selangor"
+  email: "quotes@demo-tech-sourcing.example"
+  phone: "+60 3-0000 0000"
+
+currency: "MYR"
+
+quote:
+  validity_days: 14              # how long the quoted prices are held
+  payment_terms: "30 days from invoice date"
+  number_prefix: "Q"
+
+pricing:
+  # Target gross margin by category, as a fraction of the SELL price.
+  # sell = cost / (1 - margin)   (margin, not markup)
+  target_margin:
+    software: 0.12
+    ai_tools: 0.12
+    hardware: 0.08
+  # A quote is BLOCKED if any line's realised margin falls below this floor.
+  margin_floor: 0.05
+  # Volume discount on the sell price, by quantity on a single line.
+  # The highest tier the quantity qualifies for is applied.
+  volume_discounts:
+    - min_qty: 50
+      rate: 0.03
+    - min_qty: 20
+      rate: 0.015
+  rounding: "ROUND_HALF_UP"      # applied at 2 decimal places on every money value
+
+tax:
+  # PLACEHOLDER RATES - confirm the correct tax treatment for each product
+  # type with your finance team / tax adviser before sending real quotes.
+  name: "SST"
+  rates:
+    software: 0.08
+    ai_tools: 0.08
+    hardware: 0.10
+
+checks:
+  # Quotes above this value are flagged for a second approver.
+  manager_approval_threshold: 50000
+  # Warn if a supplier price expires within this many days.
+  price_expiry_warning_days: 3
+
+hubspot:
+  pipeline: "default"
+  # Stage used when an approved quote has been sent to the client.
+  # Default pipeline stage IDs: appointmentscheduled, qualifiedtobuy,
+  # presentationscheduled, decisionmakerboughtin, contractsent, closedwon, closedlost
+  deal_stage_quote_sent: "presentationscheduled"

@@ -1,0 +1,36 @@
+{
+  "client": {
+    "name": "Daniel Wong",
+    "email": "daniel@sunwaypixel.example",
+    "company": "Sunway Pixel Studio"
+  },
+  "items": [
+    {
+      "requested_text": "Business Standard",
+      "family": "microsoft_365",
+      "sku": "M365-BS",
+      "quantity": 25,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "Visio Plan 1",
+      "family": "visio",
+      "sku": "VISIO-P1",
+      "quantity": 3,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "Dell Latitude 5450",
+      "family": "laptop",
+      "sku": "LAP-DELL-5450",
+      "quantity": 5,
+      "billing_term": "one_time",
+      "notes": null
+    }
+  ],
+  "deadline": "2026-11-30",
+  "deadline_text": "end of month",
+  "language": "en"
+}

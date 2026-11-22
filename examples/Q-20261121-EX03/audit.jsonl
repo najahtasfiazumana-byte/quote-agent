@@ -1,0 +1,3 @@
+{"ts": "2026-11-21T11:50:55", "step": "received", "chars": 327, "provider": "mock"}
+{"ts": "2026-11-21T11:50:55", "step": "extracted", "items": 2, "changed_by_normalise": true}
+{"ts": "2026-11-21T11:50:55", "step": "priced", "lines": 2, "grand_total": "186903.75", "blocking": []}

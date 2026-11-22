@@ -1,0 +1,4 @@
+line,sku,product,qty,billing_term,supplier,unit_cost,unit_price,net_amount,tax,line_total,cost_total,margin,margin_pct,lead_time_days,deadline_risk,other_options
+1,ZOOM-PRO,Zoom Workplace Pro,8,annual,Tropika Distribution,636.00,722.73,5781.84,462.55,6244.39,5088.00,693.84,12.00%,1,False,Lautan Tech Wholesale 642.00 (eligible)
+
+TOTAL,,,,,,,,5781.84,462.55,6244.39,5088.00,693.84,12.00%

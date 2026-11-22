@@ -1,0 +1,5 @@
+line,sku,product,qty,billing_term,supplier,unit_cost,unit_price,net_amount,tax,line_total,cost_total,margin,margin_pct,lead_time_days,deadline_risk,other_options
+1,LAP-LEN-T14,Lenovo ThinkPad T14 Gen 5 (Intel Core Ultra 5 / 16GB / 512GB SSD),30,one_time,Puncak IT Supply,4410.00,4793.48,141647.33,14164.73,155812.06,132300.00,9347.33,6.60%,7,True,Lautan Tech Wholesale 4390.00 (excluded: only 0 in stock); Tropika Distribution 4460.00 (excluded: only 8 in stock)
+2,DOCK-DELL-WD19S,Dell Dock WD19S,30,one_time,Puncak IT Supply,880.00,956.52,28265.17,2826.52,31091.69,26400.00,1865.17,6.60%,5,True,Tropika Distribution 905.00 (excluded: only 15 in stock)
+
+TOTAL,,,,,,,,169912.50,16991.25,186903.75,158700.00,11212.50,6.60%

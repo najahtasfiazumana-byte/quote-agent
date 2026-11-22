@@ -1,0 +1,28 @@
+{
+  "client": {
+    "name": "Priya Nair",
+    "email": "priya.nair@cyberjaya-analytics.example",
+    "company": "Cyberjaya Analytics"
+  },
+  "items": [
+    {
+      "requested_text": "ThinkPad T14",
+      "family": "laptop",
+      "sku": "LAP-LEN-T14",
+      "quantity": 30,
+      "billing_term": "one_time",
+      "notes": null
+    },
+    {
+      "requested_text": "docking stations",
+      "family": "dock",
+      "sku": "DOCK-DELL-WD19S",
+      "quantity": 30,
+      "billing_term": "one_time",
+      "notes": null
+    }
+  ],
+  "deadline": "2026-11-24",
+  "deadline_text": "within 3 days",
+  "language": "en"
+}

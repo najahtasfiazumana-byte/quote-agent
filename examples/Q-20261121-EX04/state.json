@@ -1,0 +1,119 @@
+{
+  "quote_no": "Q-20261121-EX04",
+  "created_on": "2026-11-21",
+  "valid_until": "2026-12-05",
+  "status": "APPROVED",
+  "provider": "mock",
+  "request_text": "From: Farid Hassan <farid@binaarch.example>\nSubject: Software renewal quote\n\nHi,\n\nCan you quote 8 seats of Zoom Workplace Pro (annual) and 8 seats of Autodesk AutoCAD\nfor our architects? We would like to start next month.\n\nThanks,\nFarid\nBina Arch Studio\n",
+  "extraction": {
+    "client": {
+      "name": "Farid Hassan",
+      "email": "farid@binaarch.example",
+      "company": "Bina Arch Studio"
+    },
+    "items": [
+      {
+        "requested_text": "Zoom Workplace Pro",
+        "family": "zoom",
+        "sku": "ZOOM-PRO",
+        "quantity": 8,
+        "billing_term": "annual",
+        "notes": null
+      },
+      {
+        "requested_text": "Autodesk AutoCAD",
+        "family": null,
+        "sku": null,
+        "quantity": 8,
+        "billing_term": null,
+        "notes": null
+      }
+    ],
+    "deadline": "2026-12-01",
+    "deadline_text": "next month",
+    "language": "en"
+  },
+  "clarifications": [],
+  "quote": {
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "ZOOM-PRO",
+        "name": "Zoom Workplace Pro",
+        "category": "software",
+        "billing_term": "annual",
+        "unit_label": "per user / year",
+        "quantity": 8,
+        "supplier": "Tropika Distribution",
+        "unit_cost": "636.00",
+        "lead_time_days": 1,
+        "unit_price": "722.73",
+        "line_subtotal": "5781.84",
+        "discount_rate": "0",
+        "discount_amount": "0.00",
+        "net_amount": "5781.84",
+        "tax_rate": "0.08",
+        "tax_amount": "462.55",
+        "line_total": "6244.39",
+        "cost_total": "5088.00",
+        "margin_amount": "693.84",
+        "margin_pct": "0.1200",
+        "deadline_risk": false,
+        "options_considered": [
+          {
+            "supplier": "Lautan Tech Wholesale",
+            "unit_cost": "642.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "eligible"
+          },
+          {
+            "supplier": "Tropika Distribution",
+            "unit_cost": "636.00",
+            "lead_time_days": 1,
+            "stock": null,
+            "valid_until": "2027-12-31",
+            "status": "chosen"
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "subtotal": "5781.84",
+      "discount_total": "0.00",
+      "net_total": "5781.84",
+      "tax_total": "462.55",
+      "grand_total": "6244.39",
+      "cost_total": "5088.00",
+      "margin_total": "693.84",
+      "margin_pct": "0.1200"
+    },
+    "unpriced": [
+      {
+        "requested_text": "Autodesk AutoCAD",
+        "reason": "not in catalog - source manually"
+      }
+    ],
+    "currency": "MYR"
+  },
+  "checks": [
+    {
+      "code": "MANUAL_SOURCING",
+      "severity": "warn",
+      "message": "'Autodesk AutoCAD' is not in the catalog. Quote it separately after checking with suppliers.",
+      "line_no": null
+    }
+  ],
+  "approved_by": "Najah (demo)",
+  "crm": {
+    "mode": "dry-run",
+    "contact_id": "DRYRUN-1002",
+    "deal_id": "DRYRUN-1003",
+    "line_item_ids": [
+      "DRYRUN-1004"
+    ],
+    "note_id": "DRYRUN-1006",
+    "ok": true
+  }
+}

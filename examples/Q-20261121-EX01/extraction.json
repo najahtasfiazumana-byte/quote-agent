@@ -1,0 +1,36 @@
+{
+  "client": {
+    "name": "Aisyah Rahman",
+    "email": "aisyah.rahman@kenanga-logistics.example",
+    "company": "Kenanga Logistics Sdn Bhd"
+  },
+  "items": [
+    {
+      "requested_text": "Microsoft 365 Business Standard",
+      "family": "microsoft_365",
+      "sku": "M365-BS",
+      "quantity": 25,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "Visio Plan 1",
+      "family": "visio",
+      "sku": "VISIO-P1",
+      "quantity": 3,
+      "billing_term": "annual",
+      "notes": null
+    },
+    {
+      "requested_text": "Dell Latitude 5450",
+      "family": "laptop",
+      "sku": "LAP-DELL-5450",
+      "quantity": 5,
+      "billing_term": "one_time",
+      "notes": null
+    }
+  ],
+  "deadline": "2026-12-15",
+  "deadline_text": "15 dec 2026",
+  "language": "en"
+}

@@ -1,0 +1,23 @@
+# secrets
+.env
+.streamlit/secrets.toml
+
+# generated quotes (examples/ holds committed samples)
+outputs/*
+!outputs/.gitkeep
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
